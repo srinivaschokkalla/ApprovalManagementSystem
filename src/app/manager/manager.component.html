@@ -1,0 +1,68 @@
+<app-nav-bar></app-nav-bar>
+  <div class="column" *ngFor="let Data of RequestData">
+    <mat-card class="example-card">
+      <div class="row" style="color:dodgerblue">
+      <mat-card-content>
+        <img mat-card-image src="https://media.gettyimages.com/photos/stack-of-books-picture-id157482029?s=612x612" height="200px" width="200px" alt="image">
+        <span>Purpose:{{Data.purpose}}</span><br><br>
+        <span>Description:{{Data.description}}</span><br><br>
+        <span>Approver:{{Data.approver}}</span><br><br>
+        <span>Advanced_amount:{{Data.adancedAmount}}</span><br><br>
+        <span>Etimated Cost:{{Data.estimatedCost}}</span><br><br>
+        <span>Date:{{Data.date}}</span>
+      </mat-card-content>
+    </div>
+      <mat-card-actions>
+        <button matTooltip="approver" mat-raised-button color="primary" (click)="approver(Data.id)" >Approver</button>
+        <button matTooltip="reject" mat-raised-button color="warn">Reject</button>
+      </mat-card-actions>
+</mat-card>
+</div>
+
+
+
+
+
+
+<!-- <body>
+  <app-nav-bar></app-nav-bar>
+  <div class="container">
+    <nav class="navbar" style="float: right;">
+      <input matInput [(ngModel)]="firstname" (ngModelChange)="Search()" placeholder="Type the Name to Search">
+      <mat-icon>find_in_page</mat-icon>
+    </nav>
+  </div>
+  <div class="container-fluid">
+    <div class="container">
+      <div fxLayout="row " fxLayoutAlign="space-between center">
+        <div class="col" *ngFor="let Data of RequestData">
+          <mat-card class="example-card">
+            <div class="row">
+              <mat-card-content>
+                <span>Purpose:{{Data.purpose}}</span><br>
+                <span>Etimated Cost:{{Data.estimatedCost}}</span><br>
+                <span>Description:{{Data.description}}</span><br>
+                <span>Approver:{{Data.approver}}</span><br>
+                <span>Advanced_amount:{{Data.adancedAmount}}</span><br>
+                <span>Date:{{Data.date}}</span>
+              </mat-card-content>
+            </div>
+            <mat-card-actions>
+              <button matTooltip="Edit Book" mat-raised-button color="primary" (click)="editid(Data.id)">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button matTooltip="Delete Book" mat-raised-button color="warn" (click)="deletedata(Data.id)">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+ -->
+
+
+

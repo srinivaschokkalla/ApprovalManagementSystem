@@ -1,0 +1,18 @@
+mat-card
+ {
+     max-width: 400px;
+     margin: 2em auto;
+     text-align: center;
+    }
+   mat-form-field 
+   {
+       display: block;
+    }
+   .loginBackground
+   {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+   }
+ 

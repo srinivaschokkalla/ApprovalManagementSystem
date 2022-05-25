@@ -1,0 +1,29 @@
+ mat-card{
+    background-color:white;
+    margin:0;
+}
+mat-card {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+
+mat-form-field {
+  display: block;
+
+} 
+input{
+width: 400px;
+height: 30px;
+}
+  textarea{
+    width: 400px;
+    height: 100px;
+
+  }
+h3{
+  color:brown;
+} 
+mat-label{
+  color: cornflowerblue;
+}

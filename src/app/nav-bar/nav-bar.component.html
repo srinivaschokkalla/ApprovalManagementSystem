@@ -1,0 +1,14 @@
+
+<mat-toolbar color="accent" class="nav-bar">
+    <img src="assets\image.jpg" class="rounded" alt="images" width="20%" height="50">
+    <h2 style="color:floralwhite;">Approval Management System</h2>
+    <div>
+      <span mat-button [routerLink]="['/home']">Home</span>
+      <span mat-button [routerLink]="['/myrequest']">My Request</span>
+      <span mat-button [routerLink]="['/viewHistory']">View History</span>
+      <span mat-button [matMenuTriggerFor]="logoutMenu"> Logout</span>
+    </div>
+  </mat-toolbar>
+  <mat-menu #logoutMenu="matMenu">
+    <button mat-menu-item [routerLink]="['/login']" >logout</button>
+  </mat-menu>

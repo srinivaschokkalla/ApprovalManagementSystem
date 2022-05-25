@@ -1,0 +1,61 @@
+  <div class="example-container mat-elevation-z8">
+    <mat-card class="example-card">
+        <form [formGroup]="empForm" (ngSubmit)="onSubmit(empForm.value)">
+            <mat-form-field >
+                <input matInput placeholder="Enter Id" formControlName="id" >
+               
+            </mat-form-field>
+            <mat-form-field  >
+                <input matInput placeholder="Enter purpose" formControlName="purpose">
+                <mat-error>
+                    <span *ngIf="!empForm.get('purpose')?.valid && empForm.get('purpose')?.touched">purpose
+                        Required</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Enter description " formControlName="description" >
+                <mat-error>
+                    <span *ngIf="!empForm.get('description')?.valid && empForm.get('description')?.touched">description
+                        Required</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="approver" placeholder="Enter approver">
+                <mat-error>
+                    <span *ngIf="!empForm.get('approver')?.valid && empForm.get('approver')?.touched">approver
+                        Required</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="adancedAmount" placeholder="Enter adancedAmount"
+                   >
+                <mat-error>
+                    <span *ngIf="!empForm.get('adancedAmount')?.valid && empForm.get('adancedAmount')?.touched">
+                        advancedAmount
+                        Required</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="estimatedCost" placeholder="Enter estimatedCost" 
+                    >
+                <mat-error>
+                    <span
+                        *ngIf="!empForm.get('estimatedCost')?.valid && empForm.get('estimatedCost')?.touched">estimatedCost
+                        Required</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="date" placeholder="Enter date" >
+                <mat-error>
+                    <span *ngIf="!empForm.get('date')?.valid && empForm.get('date')?.touched"> date
+                        Required</span>
+                </mat-error>
+            </mat-form-field>
+            <div class="button-row">
+                <button mat-flat-button color="primary">
+                    <mat-icon >save</mat-icon>
+                </button>
+            </div>
+        </form>
+    </mat-card>
+</div> 

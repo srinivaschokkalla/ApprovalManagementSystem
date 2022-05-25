@@ -1,0 +1,50 @@
+
+    <mat-card style="margin-top:15%">
+        <mat-card-content>
+            <form>
+                <div class="row">
+                    <div class="col-md-6" style="margin-top:-8%">
+                        <img style="width:60%;"mat-card-lg-image
+                            src="https://www.euromonitor.com/content/images/logos/emi-logo.svg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <mat-card-title style="text-align:right">EMI BUDGET</mat-card-title>
+                    </div>
+                </div>
+                <mat-form-field style="width:60%; margin-left:20%"><input matInput placeholder="Email" name="email" [(ngModel)]="email">
+                    <mat-error>
+                        Please provide a valid email address
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field style="width:60%;margin-left:20%"><input matInput type="password" placeholder="Password" name="password" [(ngModel)]="password" required>
+                    <mat-error>
+                        Please provide a valid password
+                    </mat-error>
+                </mat-form-field><button mat-raised-button color="primary" (click)="OnLogin()">Login</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+
+
+
+<!-- <mat-card>
+    <mat-card-content>
+      <form>
+        <img style="width:60%;"mat-card-lg-image
+        src="https://www.euromonitor.com/content/images/logos/emi-logo.svg" alt="">
+        <mat-form-field>
+            <mat-form-field style="width:60%; margin-left:20%"><input matInput placeholder="Email" name="email" [(ngModel)]="email">
+                <mat-error>
+            Please provide a valid email address
+          </mat-error>
+        </mat-form-field><br>
+        <mat-form-field>
+            <mat-form-field style="width:60%;margin-left:20%"><input matInput type="password" placeholder="Password" name="password" [(ngModel)]="password" required>
+                <mat-error>
+            Please provide a valid password
+          </mat-error>
+        </mat-form-field><br>
+        <button mat-raised-button color="primary" >Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card> -->
